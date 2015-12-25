@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
+    
+	<!-- <TextView 
+	    android:id="@+id/txt_summary"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="3dp"
+	    android:paddingBottom="3dp"
+	    android:text="TATKAL"
+	    android:textSize="12sp"
+	    android:textColor="#FFFFFF"
+	    android:background="#239934"/> -->
+	
+	<ListView
+        android:id="@+id/summary_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:dividerHeight="1dp"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:background="#FAFAFA"
+        android:cacheColorHint="@android:color/transparent" />
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:background="#000000"
+	    android:layout_alignParentBottom="true" >
+	    
+	    <Button 
+	        android:id="@+id/summary_btn_back"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"
+	        android:text="BACK"
+	        android:background="#FFCC00"/>
+	</LinearLayout>
+
+</RelativeLayout>

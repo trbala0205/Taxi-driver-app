@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3F3F3F" >
+    
+    <RelativeLayout
+	    android:id="@+id/jd_outerRelative"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="#3F3F3F" >
+    
+	<Button 
+        android:id="@+id/btn_new_booking"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:text="Booking Details"
+        android:textSize="16sp"
+        android:background="#FFCC00"/>
+	
+	<LinearLayout 
+	    android:id="@+id/linear_jd_bottom"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal">
+	    
+	    <Button 
+	        android:id="@+id/btn_jd_accept"
+	        android:layout_width="0dip"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginTop="5dp"
+        	android:layout_marginBottom="5dp"
+	        android:text="ACCEPT"
+	        android:textSize="16sp"
+	        android:background="#FFCC00"
+	        android:layout_weight="1"/>
+	    
+	</LinearLayout>
+	
+	<ScrollView 
+	    android:id="@+id/jd_scroll_content"
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear_jd_bottom"
+        android:layout_below="@id/btn_new_booking">
+	
+		<TableLayout 
+		    android:id="@+id/table_jd_details"
+		    android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+		    
+		    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="From"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_jd_fromaddress"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+		    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Time"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_jd_time"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+		    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Car Type"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_jd_cartype"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+			<TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Instructions"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+		    
+			<TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp"
+	            android:visibility="gone" >
+
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Phone"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_jd_phone"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+			<TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Customer"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_jd_customer"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+			<TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Fare"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_jd_fare"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+		    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="To"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_jd_to"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+		    
+        	
+		    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Payment"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_jd_payment"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="CASH/DISCOUNT/CREDIT"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+		</TableLayout>
+	
+	</ScrollView>
+	
+	
+	
+	</RelativeLayout>
+	
+	<ProgressBar
+      android:id="@+id/jd_progressBar"
+      style="?android:attr/progressBarStyleLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true" />
+</RelativeLayout>

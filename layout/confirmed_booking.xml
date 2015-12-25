@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3F3F3F" >
+    
+	<Button 
+        android:id="@+id/btn_new_booking_assigned"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:text="Congratulations\nNew Booking Assigned"
+        android:textSize="13sp"
+        android:background="#FFCC00"/>
+	
+	<ScrollView 
+	    android:id="@+id/ba_scroll_content"
+	    android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_below="@id/btn_new_booking_assigned">
+	
+		<TableLayout 
+		    android:id="@+id/table_ba_details"
+		    android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+		    
+		    <TableRow
+            android:id="@+id/ba_tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:id="@+id/txt_ba_from"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="From"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_ba_fromAddress"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="JP nagar 3rd Phase wecome to the baangalore"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+		    <TableRow
+            android:id="@+id/ba_tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:id="@+id/txt_ba_time"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Time"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_ba_time_details"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="02:15 PM"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+		    <TableRow
+            android:id="@+id/ba_tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:id="@+id/txt_ba_carType"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Car Type"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_ba_cartype_details"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="AC cab"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+			<TableRow
+            android:id="@+id/ba_tableRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Instructions"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+		    
+			<TableRow
+            android:id="@+id/ba_tableRow5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:id="@+id/txt_ba_phone"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Phone"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_ba_phoneNumber"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="9739474702"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+			<TableRow
+            android:id="@+id/ba_tableRow6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:id="@+id/txt_ba_customer"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Customer"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_ba_customerDetails"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="Tech"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+			<TableRow
+            android:id="@+id/ba_tableRow7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:id="@+id/txt_ba_fare"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Fare"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_ba_amount_details"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="250.00/10KM, Ex-KM: 15.00. Disc: Rs.50"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+		    <TableRow
+            android:id="@+id/ba_tableRow8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:id="@+id/txt_ba_to"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="To"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_ba_toAddress"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="KR Puram Railway station"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+		    
+        	
+		    <TableRow
+            android:id="@+id/ba_tableRow9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:id="@+id/txt_ba_payment"
+	                android:layout_width="130dp"
+	                android:layout_height="wrap_content"
+	                android:text="Payment"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_ba_payment_details"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="CASH/DISCOUNT/CREDIT"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+		</TableLayout>
+	
+	</ScrollView>
+	
+	<LinearLayout 
+	    android:id="@+id/linear_ba_bottom"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal">
+	    
+	    <Button 
+	        android:id="@+id/btn_ba_onduty"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginTop="5dp"
+        	android:layout_marginBottom="5dp"
+	        android:text="ON DUTY"
+	        android:textSize="16sp"
+	        android:background="#FFCC00"
+	        android:layout_weight="1"/>
+	    
+	</LinearLayout>
+</RelativeLayout>

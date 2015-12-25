@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+    <TextView 
+       android:background="#239934"
+       android:layout_width="60dp"
+       android:layout_height="30dp"
+       android:scaleType="centerInside"
+       android:id="@+id/txt_custom_actionbar"
+       android:layout_alignParentLeft="true"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       android:gravity="center"
+       android:text="FREE"
+       android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

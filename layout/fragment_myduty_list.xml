@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3F3F3F" >
+    
+    <RelativeLayout
+	    android:id="@+id/myduty_mainRelative1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#3F3F3F" >
+    <LinearLayout
+	    android:id="@+id/myduty_buttonRelative1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:background="#3F3F3F" >
+	    
+        <Button 
+	        android:id="@+id/btn_myduty_city1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="35dp"
+	        android:layout_marginRight="5dp"
+	       	android:layout_marginTop="5dp"
+	       	android:layout_marginBottom="5dp"
+	       	android:layout_weight="1"
+	        android:text="City"
+	        android:textSize="16sp"
+	        android:background="@color/bg_button_green"/>
+        
+        <Button 
+	        android:id="@+id/btn_myduty_outstation1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="35dp"
+	       	android:layout_marginTop="5dp"
+	       	android:layout_marginBottom="5dp"
+	       	android:layout_weight="1"
+	        android:text="Outstation"
+	        android:textSize="16sp"
+	        android:background="@color/bg_button_gray"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/btn_myduty_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/myduty_buttonRelative1"
+        android:background="#808281"/>
+    
+    <RelativeLayout
+	    android:id="@+id/myduty_emptyRelative1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/btn_myduty_line1"
+        android:visibility="gone" 
+	    android:background="#3F3F3F" >
+	    
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:textSize="20sp"
+           android:textColor="#FFFFFF"
+           android:text="No current duty"
+           android:textAppearance="?android:attr/textAppearanceLarge"/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+	    android:id="@+id/myduty_outerRelative1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/btn_myduty_line1"
+	    android:orientation="vertical"
+	    android:background="#3F3F3F" >
+    
+		<!-- <Button 
+	        android:id="@+id/btn_myduty_cancel1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="35dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="5dp"
+	       	android:layout_marginTop="5dp"
+	       	android:layout_marginBottom="5dp"
+	        android:text="Cancel"
+	        android:textSize="16sp"
+	        android:background="#FFCC00"/> -->
+		
+		<LinearLayout 
+		    android:id="@+id/linear_myduty_bottom1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:orientation="horizontal">
+		    
+		    <Button 
+		        android:id="@+id/btn_myduty_accept1"
+		        android:layout_width="0dip"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="5dp"
+	        	android:layout_marginRight="5dp"
+	        	android:layout_marginTop="5dp"
+	        	android:layout_marginBottom="5dp"
+		        android:text="Back"
+		        android:textSize="16sp"
+		        android:background="#FFCC00"
+		        android:layout_weight="1"/>
+		    
+		</LinearLayout>
+		
+		<ListView 
+		    android:id="@+id/myduty_list"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:divider="#b5b5b5"
+	        android:dividerHeight="1dp"
+	        android:listSelector="@drawable/list_selector"
+	        android:layout_above="@id/linear_myduty_bottom1"
+	        android:background="#3F3F3F">
+		</ListView>
+		
+		<TextView
+		    android:id="@+id/txt_myduty_nocurrent_duty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:text="No current duty"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone" />
+	
+	</RelativeLayout>
+	
+    <ProgressBar
+      android:id="@+id/myduty_progressBar"
+      style="?android:attr/progressBarStyleLarge"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true" />
+	
+    </RelativeLayout>
+	
+</FrameLayout>

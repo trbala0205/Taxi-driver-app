@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F3F3F" >
+        
+    <TableLayout 
+    android:id="@+id/onduty_table_details"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    
+        <TableRow
+	          android:id="@+id/onduty_tableRow1"
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_marginLeft="5dp"
+       		  android:layout_marginRight="5dp" >
+	
+	           <TextView
+	               android:id="@+id/onduty_txt_from"
+	               android:layout_width="80dp"
+	               android:layout_height="wrap_content"
+	               android:text="Pickup Point"
+	               android:textSize="12sp"
+	               android:textColor="#FFFFFF"
+	               android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	           <TextView
+	               android:id="@+id/onduty_txt_fromAddress"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="12sp"
+	               android:textColor="#FFFFFF"
+	               android:textAppearance="?android:attr/textAppearanceLarge" />
+	           
+	      	</TableRow>
+	      	
+        <TableRow
+	          android:id="@+id/onduty_tableRow2"
+	          android:layout_width="fill_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_marginLeft="5dp"
+       		  android:layout_marginRight="5dp" >
+	
+	           <TextView
+	               android:id="@+id/onduty_txt_bookingid"
+	               android:layout_width="80dp"
+	               android:layout_height="wrap_content"
+	               android:text="Booking ID"
+	               android:textSize="12sp"
+	               android:textColor="#FFFFFF"
+	               android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	           <TextView
+	               android:id="@+id/onduty_txt_bookingid_details"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:textSize="12sp"
+	               android:textColor="#FFFFFF"
+	               android:textAppearance="?android:attr/textAppearanceLarge" />
+	           
+	      	</TableRow>
+	      	
+	    
+	      	
+		    <TableRow
+		          android:id="@+id/onduty_tableRow3"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content"
+		          android:layout_marginLeft="5dp"
+          	 	  android:layout_marginRight="5dp" >
+		
+		           <TextView
+		               android:id="@+id/onduty_txt_time"
+		               android:layout_width="80dp"
+		               android:layout_height="wrap_content"
+		               android:text="Time"
+		               android:textSize="12sp"
+		               android:textColor="#FFFFFF"
+		               android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		           <TextView
+		               android:id="@+id/onduty_txt_timing"
+		               android:layout_width="175dp"
+		               android:layout_height="wrap_content"
+		               android:textSize="12sp"
+		               android:textColor="#FFFFFF"
+		               android:textAppearance="?android:attr/textAppearanceLarge" />
+		           
+		      	</TableRow>
+		      	
+		     <TableRow
+		          android:id="@+id/onduty_tableRow4"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content"
+		          android:layout_marginLeft="5dp"
+		          android:layout_marginRight="5dp" >
+
+	           <TextView
+	               android:id="@+id/onduty_txt_phone"
+	               android:layout_width="80dp"
+	               android:layout_height="wrap_content"
+	               android:text="Phone"
+	               android:textSize="12sp"
+	               android:textColor="#FFFFFF"
+	               android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	           <TextView
+	               android:id="@+id/onduty_txt_phonenumber"
+	               android:layout_width="175dp"
+	               android:layout_height="wrap_content"
+	               android:textSize="12sp"
+	               android:textColor="#2CB9F1"
+	               android:textAppearance="?android:attr/textAppearanceLarge" />
+	           
+	      	</TableRow>
+		    
+     	</TableLayout>
+      
+  	 
+  	 
+  	 <LinearLayout 
+	    android:id="@+id/onduty_linear_bottom1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal"
+	    android:visibility="gone">
+	    
+	    <Button 
+	        android:id="@+id/onduty_btn_point"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginTop="5dp"
+        	android:layout_marginBottom="5dp"
+	        android:text="POINT"
+	        android:background="#FFCC00"
+	        android:layout_weight="1"/>
+	    
+	    <Button 
+	        android:id="@+id/onduty_btn_back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginTop="5dp"
+        	android:layout_marginBottom="5dp"
+	        android:text="BACK"
+	        android:background="#FFCC00"
+	        android:layout_weight="1"/>
+	    
+	</LinearLayout>
+	
+  	 <Button 
+	        android:id="@+id/btn_onduty_cancel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_below="@id/onduty_table_details"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="5dp"
+	       	android:layout_marginTop="5dp"
+	       	android:layout_marginBottom="5dp"
+	        android:text="Cancel"
+	        android:textSize="16sp"
+	        android:background="#FFCC00"/>
+  	 
+	<LinearLayout
+		    android:id="@+id/onduty_linear_bottom"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:gravity="center"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp"
+		    android:orientation="horizontal"
+		    android:background="#FFFFFF" >
+		    
+		    <Button
+             android:id="@+id/btntxt_onduty_ontheway"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:background="@drawable/bg_circle_green"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="On the way"
+             android:textColor="#434344"
+             android:textSize="12sp" />
+		    
+		    <View
+	             android:layout_width="10dp"
+	             android:layout_height="2dp"
+	             android:background="#000000"/>
+		    
+		    <Button
+             android:id="@+id/btntxt_onduty_pickup_point"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/bg_circle_orange"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="Pickup point"
+             android:textColor="#434344"
+             android:textSize="12sp" />
+		    
+		    <Button
+             android:id="@+id/btntxt_onduty_start"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/bg_circle"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="Start"
+             android:textColor="#434344"
+             android:textSize="12sp" />
+		    
+		    <Button
+             android:id="@+id/btntxt_onduty_stop"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/bg_circle"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="Stop"
+             android:textColor="#434344"
+             android:textSize="12sp" />
+		    
+		    <Button
+             android:id="@+id/btntxt_onduty_end"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:background="@drawable/bg_circle"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="End"
+             android:textColor="#434344"
+             android:textSize="12sp" />
+		    
+		</LinearLayout>
+	
+  	 <fragment
+        android:id="@+id/onduty_map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/btn_onduty_cancel"
+        android:layout_above="@id/onduty_linear_bottom"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+
+</RelativeLayout>

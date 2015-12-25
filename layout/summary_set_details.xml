@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3F3F3F" >
+    
+	<Button 
+        android:id="@+id/btn_summary_set_alert"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="SET DETAILS"
+        android:background="#FFCC00"/>
+	
+	
+		<TableLayout 
+		    android:id="@+id/table_summary_set_details"
+		    android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true">
+		    
+		    <TableRow
+	            android:id="@+id/summary_set_tableRow1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:id="@+id/txt_summary_set_airport_pickup_rate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Airport pickup rate"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <EditText
+	                android:id="@+id/edit_summary_set_airport_pickup_rate"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text=""
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+		    <TableRow
+	            android:id="@+id/summary_set_tableRow2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:id="@+id/txt_summary_set_daily_target"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Daily Target"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <EditText
+	                android:id="@+id/edit_summary_set_daily_target_details"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text=""
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+        	<TableRow
+	            android:id="@+id/summary_set_tableRow3"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+
+	            <TextView
+	                android:id="@+id/txt_summary_set_monthly_target"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="Monthly Target"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <EditText
+	                android:id="@+id/edit_summary_set_monthly_target_details"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text=""
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+        	</TableRow>
+        	
+		</TableLayout>
+	
+	
+	<LinearLayout 
+	    android:id="@+id/linear_summary_set_bottom"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal">
+	    
+	    <Button 
+	        android:id="@+id/btn_summary_set_accept"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginTop="5dp"
+        	android:layout_marginBottom="5dp"
+	        android:text="SET"
+	        android:background="#FFCC00"
+	        android:layout_weight="1"/>
+
+	</LinearLayout>
+ 
+</RelativeLayout>

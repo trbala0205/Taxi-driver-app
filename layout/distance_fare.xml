@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3F3F3F" >
+    
+	<Button 
+        android:id="@+id/btn_thanks"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:text="THANKS FOR SERVING THIS BOOKINGS"
+        android:textSize="13sp"
+        android:background="#FFCC00"/>
+	
+	<ScrollView 
+	    android:id="@+id/df_scroll_content"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_thanks">
+		
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+		    
+			<TableLayout 
+			    android:id="@+id/table_df_details"
+			    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+			    
+			    <TableRow
+	            android:id="@+id/df_tableRow1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:id="@+id/txt_df_distance"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:text="Total Distance"
+		                android:textSize="16sp"
+		                android:textColor="#FFCC00"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_df_distance_details"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:text=""
+		                android:textSize="24sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			    <TableRow
+	            android:id="@+id/df_tableRow2"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:id="@+id/txt_df_fare"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:text="Fare"
+		                android:textSize="16sp"
+		                android:textColor="#FFCC00"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_df_fare_details"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:text=""
+		                android:textSize="24sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			    <TableRow
+	            android:id="@+id/df_tableRow3"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+			        <TextView
+		                android:id="@+id/txt_df_discount"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:text="Discount"
+		                android:textSize="16sp"
+		                android:textColor="#FFCC00"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_df_discount_details"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:text=""
+		                android:textSize="24sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			    <TableRow
+	            android:id="@+id/df_tableRow4"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+			        <TextView
+		                android:id="@+id/txt_df_collectfare"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:text="Collect Fare"
+		                android:textSize="16sp"
+		                android:textColor="#FFCC00"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_df_collectfare_details"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:text=""
+		                android:textSize="24sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+		            
+	        	</TableRow>
+	        	 
+			    <TableRow
+	            android:id="@+id/df_tableRow5"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:id="@+id/txt_df_time"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:text="Total Time"
+		                android:textSize="16sp"
+		                android:textColor="#FFCC00"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_df_time_details"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:text=""
+		                android:textSize="24sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			    <TableRow
+		            android:id="@+id/df_tableRow6"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:id="@+id/txt_df_prepaidadded"
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Prepaid Added"
+		                android:textSize="16sp"
+		                android:textColor="#FFCC00"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_df_prepaidadded_details"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:text=""
+		                android:textSize="24sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			</TableLayout>
+		
+			<TextView
+		                android:id="@+id/txt_df_total_amount"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="center"
+		                android:layout_marginTop="10dp"
+		                android:text="TOTAL: Rs 500"
+		                android:textSize="30sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+	    <LinearLayout 
+		    android:id="@+id/fare_rules_linearlayout1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_margin="5dp"
+		    android:visibility="gone">
+	
+	            <TextView
+	                android:id="@+id/txt_df_fare_rules1"
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:text="Fare Rules:"
+	                android:textSize="16sp"
+	                android:textColor="#FFCC00"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_df_fixedrate_details1"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="First 10 KMs 100 INR"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+	            <TextView
+	                android:id="@+id/txt_df_extracharge_details1"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="First 10 KMs 100 INR"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        </LinearLayout>
+	        
+	    <LinearLayout 
+		    android:id="@+id/fare_rules_linearlayout2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_margin="5dp"
+		    android:visibility="gone">
+	
+	            <TextView
+	                android:id="@+id/txt_df_fare_rules2"
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:text="Fare Rules:"
+	                android:textSize="16sp"
+	                android:textColor="#FFCC00"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	            <TextView
+	                android:id="@+id/txt_df_fixedrate_details2"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="First 10 KMs 100 INR"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+	            <TextView
+	                android:id="@+id/txt_df_extracharge_details2"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="First 10 KMs 100 INR"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+	            <TextView
+	                android:id="@+id/txt_df_tollcharge_details2"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="First 10 KMs 100 INR"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+	            
+	            <TextView
+	                android:id="@+id/txt_df_parkingcharge_details2"
+	                android:layout_width="175dp"
+	                android:layout_height="wrap_content"
+	                android:text="First 10 KMs 100 INR"
+	                android:textSize="16sp"
+	                android:textColor="#FFFFFF"
+	                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+	
+	</ScrollView>
+	
+	<LinearLayout
+		    android:id="@+id/linear_df_bottom"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:gravity="center"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp"
+		    android:orientation="horizontal"
+		    android:background="#FFFFFF" >
+		    
+		    <Button
+             android:id="@+id/btntxt_df_ontheway"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:background="@drawable/bg_circle_green"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="On the way"
+             android:textColor="#FFFFFF"
+             android:textSize="14dp" />
+		    
+		    <View
+             android:layout_width="10dp"
+             android:layout_height="2dp"
+             android:background="#000000"/>
+		    
+		    <Button
+             android:id="@+id/btntxt_df_pickup_point"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:background="@drawable/bg_circle_green"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="Pickup point"
+             android:textColor="#FFFFFF"
+             android:textSize="14dp" />
+		    
+		    <View
+             android:layout_width="10dp"
+             android:layout_height="2dp"
+             android:background="#000000"/>
+		    
+		    <Button
+             android:id="@+id/btntxt_df_start"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:background="@drawable/bg_circle_green"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="Start"
+             android:textColor="#FFFFFF"
+             android:textSize="14dp" />
+		    
+		    <View
+             android:layout_width="10dp"
+             android:layout_height="2dp"
+             android:background="#000000"/>
+		    
+		    <Button
+             android:id="@+id/btntxt_df_stop"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:background="@drawable/bg_circle_green"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="Stop"
+             android:textColor="#FFFFFF"
+             android:textSize="14dp" />
+		    
+		    <View
+             android:layout_width="10dp"
+             android:layout_height="2dp"
+             android:background="#000000"/>
+		    
+		    <Button
+             android:id="@+id/btntxt_df_end"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:background="@drawable/bg_circle_orange"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="End"
+             android:textColor="#FFFFFF"
+             android:textSize="14dp" />
+		    
+		</LinearLayout>
+		
+	<LinearLayout 
+	    android:id="@+id/linear_df_bottom1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="horizontal"
+	    android:visibility="gone">
+	    
+	    <Button 
+	        android:id="@+id/btn_df_endtrip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="5dp"
+        	android:layout_marginRight="5dp"
+        	android:layout_marginTop="5dp"
+        	android:layout_marginBottom="5dp"
+	        android:text="END TRIP"
+	        android:textSize="16sp"
+	        android:background="#FFCC00"
+	        android:layout_weight="1"/>
+	    
+	</LinearLayout>
+</RelativeLayout>

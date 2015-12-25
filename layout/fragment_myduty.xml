@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3F3F3F" >
+    
+    <RelativeLayout
+	    android:id="@+id/myduty_mainRelative"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#3F3F3F" >
+	    
+    <!-- <LinearLayout
+	    android:id="@+id/myduty_buttonRelative"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:background="#3F3F3F" >
+	    
+        <Button 
+	        android:id="@+id/btn_myduty_city"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_marginRight="5dp"
+	       	android:layout_marginTop="5dp"
+	       	android:layout_marginBottom="5dp"
+	       	android:layout_weight="1"
+	        android:text="City"
+	        android:textSize="16sp"
+	        android:background="@color/bg_button_green"/>
+        
+        <Button 
+	        android:id="@+id/btn_myduty_outstation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	       	android:layout_marginTop="5dp"
+	       	android:layout_marginBottom="5dp"
+	       	android:layout_weight="1"
+	        android:text="Outstation"
+	        android:textSize="16sp"
+	        android:background="@color/bg_button_gray"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/btn_myduty_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/myduty_buttonRelative"
+        android:background="#808281"/> -->
+    
+    <!-- android:layout_below="@+id/btn_myduty_line" -->
+    
+    <RelativeLayout
+	    android:id="@+id/myduty_emptyRelative"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#3F3F3F"
+	    android:visibility="gone" >
+	    
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerInParent="true"
+           android:textSize="20sp"
+           android:textColor="#FFFFFF"
+           android:text="No current duty"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+	    android:id="@+id/myduty_outerRelative"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/myduty_emptyRelative"
+	    android:orientation="vertical"
+	    android:background="#3F3F3F" >
+    
+		<Button 
+	        android:id="@+id/btn_myduty_cancel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="30dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="5dp"
+	       	android:layout_marginTop="5dp"
+	       	android:layout_marginBottom="5dp"
+	        android:text="Cancel"
+	        android:textSize="16sp"
+	        android:background="#FFCC00"/>
+		
+		<LinearLayout
+		    android:id="@+id/linear_myduty_bottom"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:gravity="center"
+		    android:paddingTop="5dp"
+		    android:paddingBottom="5dp"
+		    android:orientation="horizontal"
+		    android:background="#FFFFFF" >
+		    
+		    <!-- <Button 
+		        android:id="@+id/btn_myduty_accept"
+		        android:layout_width="0dip"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="5dp"
+	        	android:layout_marginRight="5dp"
+	        	android:layout_marginTop="5dp"
+	        	android:layout_marginBottom="5dp"
+		        android:text="On The Way"
+		        android:textSize="16sp"
+		        android:background="#FFCC00"
+		        android:layout_weight="1"/> -->
+		    
+		    <Button
+             android:id="@+id/btntxt_myduty_ontheway"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/bg_circle_orange"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="On the way"
+             android:textColor="#434344"
+             android:textSize="12sp" />
+		    
+		    <Button
+             android:id="@+id/btntxt_myduty_pickup_point"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/bg_circle"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="Pickup point1"
+             android:textColor="#434344"
+             android:textSize="12sp" />
+		    
+		    <Button
+             android:id="@+id/btntxt_myduty_start"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/bg_circle"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="Start"
+             android:textColor="#434344"
+             android:textSize="12sp" />
+		    
+		    <Button
+             android:id="@+id/btntxt_myduty_stop"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/bg_circle"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="Stop"
+             android:textColor="#434344"
+             android:textSize="12sp" />
+		    
+		    <Button
+             android:id="@+id/btntxt_myduty_end"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:background="@drawable/bg_circle"
+             android:gravity="center"
+             style="@style/AudioFileInfoOverlayText"
+             android:text="End"
+             android:textColor="#434344"
+             android:textSize="12sp" />
+		    
+		</LinearLayout>
+		
+		<ScrollView 
+		    android:id="@+id/onduty_scroll_city_content"
+		    android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_above="@id/linear_myduty_bottom"
+	        android:layout_below="@id/btn_myduty_cancel"
+	        android:visibility="gone">
+		
+			<TableLayout 
+			    android:id="@+id/table_myduty_details"
+			    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+			    
+			    <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Pickup Point"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_pickup_point"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			    <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Time"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_time"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			    <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Booking Type"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_bookingtype"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			    <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Car Type"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_cartype"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+				<TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Customer Name"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_customername"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+			    
+				<TableRow
+				    android:id="@+id/tablerow_myduty_mobilenumber"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Mobile Number"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_mobilenumber"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#2CB9F1"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+				<TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Fare Detail"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_faredetail"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			    <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Drop Point"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_drop_point"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			</TableLayout>
+		
+		</ScrollView>
+		
+		<ScrollView 
+		    android:id="@+id/onduty_scroll_outstaion_content"
+		    android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_above="@id/linear_myduty_bottom"
+	        android:layout_below="@id/btn_myduty_cancel"
+	        android:visibility="gone">
+		
+			<TableLayout 
+			    android:id="@+id/table_myduty_outstaion_details"
+			    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+			    
+			    <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Travel Date"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_outstaion_traveldate"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			    <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Customer Name"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_outstaion_customername"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			    <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Pickup Address"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_outstaion_pickup_point"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			    <TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Outstation Places"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_outstaion_outstation_places"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+				<TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Number of Days"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_outstaion_noofdays"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+			    
+				<TableRow
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="5dp" >
+	
+		            <TextView
+		                android:layout_width="130dp"
+		                android:layout_height="wrap_content"
+		                android:text="Mobile Number"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		            <TextView
+		                android:id="@+id/txt_myduty_outstaion_mobilenumber"
+		                android:layout_width="175dp"
+		                android:layout_height="wrap_content"
+		                android:textSize="16sp"
+		                android:textColor="#FFFFFF"
+		                android:textAppearance="?android:attr/textAppearanceLarge" />
+		            
+	        	</TableRow>
+	        	
+			</TableLayout>
+		
+		</ScrollView>
+	
+		<ProgressBar
+	      android:id="@+id/onduty_progressBar"
+	      style="?android:attr/progressBarStyleLarge"
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_centerHorizontal="true"
+	      android:layout_centerVertical="true" />
+		
+	</RelativeLayout>
+	
+    </RelativeLayout>
+	
+</FrameLayout>

@@ -1,5 +1,5 @@
 # Taxi-driver-app
-This is a simple Taxi Driver app to maintain driver details and route maps, for the security reason I have included only the XML layout design files and not included any java source code of this application. 
+This is a simple Taxi Driver app to maintain driver details and route maps, for the security reason I have included only the XML layout design files and its screenshots and not included any java source code of this application. 
 
 Features:
 ========

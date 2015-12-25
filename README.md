@@ -10,3 +10,12 @@ Features:
 4. Distance and Time calculation done in background process.
 5. Finally, in drop point he will all summary details of served trip.
 etc.,
+
+Sreecnshots
+===========
+
+![ScreenShot](https://github.com/trbala0205/Taxi-driver-app/blob/master/Screenshots/allduty_search.png?raw=true)
+
+![ScreenShot](https://github.com/trbala0205/Taxi-driver-app/blob/master/Screenshots/trip_started_on_the_way.png)
+
+![ScreenShot](https://github.com/trbala0205/Taxi-driver-app/blob/master/Screenshots/myduty_cancellation.png)
